@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Background Particles -->
+    <div class="bg-particles" id="bgParticles"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <span class="accent-text">Portfolio</span>
+                </div>
+                <button class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <a href="#" class="resume-btn">
+                            <i class="fas fa-download"></i> Resume
+                        </a>
+                    </li>
+                    <li>
+                        <button class="theme-toggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="accent-text">ALI HAMZA</span></h1>
+                <p>I'm a <span class="accent-text-purple">Full Stack Developer</span> with a passion for creating beautiful, functional, and user-friendly websites and applications.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="profile_img.jpg" alt="Ali HamZa">
+            </div>
+        </div>
+        <div class="particles">
+            <!-- Particles will be added by JavaScript -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="ali.jpg" alt="Ali HamZa">
+                </div>
+                <div class="about-text">
+                    <h3>Full Stack Developer based in Nankana Sahib</h3>
+                    <p>I am a passionate full stack developer with over 3 years of experience in creating web applications. I specialize in JavaScript, React, Php, and laravel. My goal is to build products that are both functional and beautiful.</p>
+                    <p>I enjoy solving complex problems and learning new technologies. When I'm not coding, you can find me hiking, reading, or experimenting with new recipes.</p>
+                    <p>I believe in writing clean, maintainable code and creating intuitive user experiences. Let's work together to bring your ideas to life!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-content">
+                <div class="skills-grid">
+                    <!-- Frontend Skills -->
+                    <div class="skill-category">
+                        <h3>Frontend Development</h3>
+                        <div class="skills-carousel">
+                            <div class="carousel-container">
+                                <div class="skill-card" data-skill="html">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-html5"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h4>HTML5</h4>
+                                        <div class="skill-progress-container">
+                                            <div class="skill-progress skill-progress-html"></div>
+                                        </div>
+                                        <span class="skill-percent">90%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-card" data-skill="css">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-css3-alt"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h4>CSS3</h4>
+                                        <div class="skill-progress-container">
+                                            <div class="skill-progress skill-progress-css"></div>
+                                        </div>
+                                        <span class="skill-percent">85%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-card" data-skill="js">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-js"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h4>JavaScript</h4>
+                                        <div class="skill-progress-container">
+                                            <div class="skill-progress skill-progress-js"></div>
+                                        </div>
+                                        <span class="skill-percent">80%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-card" data-skill="react">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-react"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h4>React</h4>
+                                        <div class="skill-progress-container">
+                                            <div class="skill-progress skill-progress-react"></div>
+                                        </div>
+                                        <span class="skill-percent">75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Backend Skills -->
+                    <div class="skill-category">
+                        <h3>Backend Development</h3>
+                        <div class="skills-carousel">
+                            <div class="carousel-container">
+                                <div class="skill-card" data-skill="node">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-node-js"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h4>Node.js</h4>
+                                        <div class="skill-progress-container">
+                                            <div class="skill-progress skill-progress-node"></div>
+                                        </div>
+                                        <span class="skill-percent">70%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-card" data-skill="laravel">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-laravel"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h4>Laravel</h4>
+                                        <div class="skill-progress-container">
+                                            <div class="skill-progress skill-progress-laravel"></div>
+                                        </div>
+                                        <span class="skill-percent">85%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-card" data-skill="php">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-php"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h4>PHP</h4>
+                                        <div class="skill-progress-container">
+                                            <div class="skill-progress skill-progress-php"></div>
+                                        </div>
+                                        <span class="skill-percent">60%</span>
+                                    </div>
+                                </div>
+                                <div class="skill-card" data-skill="database">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-database"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h4>SQL</h4>
+                                        <div class="skill-progress-container">
+                                            <div class="skill-progress skill-progress-sql"></div>
+                                        </div>
+                                        <span class="skill-percent">75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">My Services</h2>
+            <div class="services-content">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Custom website development tailored to your business needs with responsive design and modern technologies.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Development</h3>
+                    <p>Building cross-platform mobile applications that work seamlessly on both iOS and Android devices.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Creating intuitive user interfaces and engaging user experiences that drive customer satisfaction.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3>API Integration</h3>
+                    <p>Seamless integration of third-party APIs and development of custom APIs for your applications.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database Management</h3>
+                    <p>Efficient database design, optimization, and management for your applications.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Code Optimization</h3>
+                    <p>Refactoring and optimizing existing code for better performance and maintainability.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="design">UI/UX</button>
+            </div>
+            
+            <div class="projects-content">
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250?text=E-commerce+Website" alt="E-commerce Website">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Website</h3>
+                        <p>A fully responsive e-commerce platform with product catalog, shopping cart, and user authentication.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250?text=Task+Management+App" alt="Task Management App">
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Management App</h3>
+                        <p>A task management application with drag-and-drop interface, task prioritization, and team collaboration.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Redux</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250?text=Weather+Dashboard" alt="Weather Dashboard">
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather Dashboard</h3>
+                        <p>A weather forecasting dashboard with location search, 5-day forecast, and interactive charts.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API</span>
+                            <span class="tag">Chart.js</span>
+                        </div>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card hidden" data-category="mobile">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250?text=Fitness+Tracker" alt="Fitness Tracker">
+                    </div>
+                    <div class="project-info">
+                        <h3>Fitness Tracker</h3>
+                        <p>A mobile app to track workouts, nutrition, and progress with personalized recommendations.</p>
+                        <div class="project-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Health API</span>
+                        </div>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card hidden" data-category="design">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250?text=Banking+App+UI" alt="Banking App UI">
+                    </div>
+                    <div class="project-info">
+                        <h3>Banking App UI</h3>
+                        <p>Modern UI design for a mobile banking application with intuitive navigation and clean aesthetics.</p>
+                        <div class="project-tags">
+                            <span class="tag">Figma</span>
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Prototyping</span>
+                        </div>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card hidden" data-category="web">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250?text=Portfolio+Website" alt="Portfolio Website">
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>A custom portfolio website for a photographer with gallery, blog, and contact functionality.</p>
+                        <div class="project-tags">
+                            <span class="tag">WordPress</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">Custom Theme</span>
+                        </div>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#" class="btn view-more-btn">View All Projects</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client Reviews</h2>
+            <div class="testimonials-content">
+                <div class="testimonial-slider">
+                    <div class="testimonial-track">
+                        <div class="testimonial-card">
+                            <div class="testimonial-inner">
+                                <p class="testimonial-text">Ali delivered an exceptional e-commerce website for our business. His attention to detail and problem-solving skills were impressive. The site has significantly increased our online sales and customer engagement.</p>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">
+                                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Smith">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>John Smith</h4>
+                                        <p>CEO, Retail Solutions</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-inner">
+                                <p class="testimonial-text">Working with Ali on our mobile app was a great experience. He understood our vision perfectly and implemented it with clean, efficient code. The app has received fantastic feedback from our users.</p>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">
+                                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Sarah Johnson</h4>
+                                        <p>Product Manager, TechStart</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-inner">
+                                <p class="testimonial-text">Ali's UI/UX design skills transformed our web application. He created an intuitive interface that improved our user retention by 40%. His professionalism and creativity are top-notch.</p>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">
+                                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Michael Chen">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Michael Chen</h4>
+                                        <p>CTO, DataSystems</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-nav">
+                    <div class="testimonial-dot active" data-index="0"></div>
+                    <div class="testimonial-dot" data-index="1"></div>
+                    <div class="testimonial-dot" data-index="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Talk About Your Project</h3>
+                    <p>Feel free to reach out if you're looking for a developer, have a question, or just want to connect.</p>
+                    <div class="contact-details">
+                        <p><i class="fas fa-envelope"></i> alihamzabhatti153@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +92 3271264830</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Nankana Sahib, Punjab, Pakistan</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <span class="accent-text">Portfolio</span>
+                    </div>
+                    <div class="footer-about">
+                        <p>I'm a Full Stack Developer with a passion for creating beautiful, functional, and user-friendly websites and applications.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                            <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                            <li><a href="#skills"><i class="fas fa-chevron-right"></i> Skills</a></li>
+                            <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                            <li><a href="#projects"><i class="fas fa-chevron-right"></i> Projects</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Web Development</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Mobile Development</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> UI/UX Design</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> API Integration</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Database Management</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <div class="footer-newsletter">
+                        <p>Subscribe to my newsletter to receive updates on my latest projects and services.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your Email">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                        <div class="contact-details">
+                            <p><i class="fas fa-envelope"></i> alihamzabhatti153@gmail.com</p>
+                            <p><i class="fas fa-phone"></i> +92 3271264830</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Nankana Sahib, Pakistan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 HamzaBhatti.dev All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <div class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
